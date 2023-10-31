@@ -26,4 +26,8 @@ var rotate = function (nums, k) {
 	// remove first element and pop it to the back of array
 	let remainder = k % nums.length;
 	nums.unshift(...nums.splice(-remainder));
+	return nums;
 };
+
+console.log(rotate([1, 2, 3, 4, 5, 6, 7], 2));
+console.log("hey");
